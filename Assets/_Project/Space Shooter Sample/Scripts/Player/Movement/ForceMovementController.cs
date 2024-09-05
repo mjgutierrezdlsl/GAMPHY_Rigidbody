@@ -13,7 +13,12 @@ public class ForceMovementController : MovementController
     protected override void Move(Vector2 direction, float deltaTime)
     {
         _rigidbody.AddForce(deltaTime * Speed * direction);
-        _rigidbody.velocity = Vector2.ClampMagnitude(_rigidbody.velocity, _maxSpeed);
+
+        if (_rigidbody.velocity.magnitude > _maxSpeed)
+        {
+            _rigidbody.velocity = _rigidbody.velocity.normalized * _maxSpeed;
+        }
+
     }
     private void FixedUpdate()
     {

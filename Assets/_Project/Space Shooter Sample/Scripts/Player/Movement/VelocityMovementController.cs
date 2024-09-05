@@ -15,8 +15,9 @@ public class VelocityMovementController : MovementController
         _rigidbody.velocity = Speed * direction;
     }
 
-    private void FixedUpdate()
+    protected override void Update()
     {
+        base.Update();
         Move(Direction, Time.fixedDeltaTime);
     }
 }

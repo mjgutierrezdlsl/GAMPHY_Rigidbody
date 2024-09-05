@@ -412,10 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584862051}
   - component: {fileID: 584862053}
-  - component: {fileID: 584862055}
   - component: {fileID: 584862054}
-  - component: {fileID: 584862056}
-  - component: {fileID: 584862057}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -452,7 +449,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.25
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -473,7 +470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584862049}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72667294034474592996bb7536a7183e, type: 3}
   m_Name: 
@@ -481,47 +478,6 @@ MonoBehaviour:
   <Speed>k__BackingField: 50
   _rigidbody: {fileID: 584862053}
   _maxSpeed: 5
---- !u!114 &584862055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584862049}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb37c36914e04338ae1ddea485eb770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Speed>k__BackingField: 5
---- !u!114 &584862056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584862049}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c3ec91280bbd4b49b87068f4f6efe50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Speed>k__BackingField: 5
-  _rigidbody: {fileID: 584862053}
---- !u!114 &584862057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584862049}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8205b7d522be14fca9e7144acb4fec3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Speed>k__BackingField: 5
-  _rigidbody: {fileID: 584862053}
 --- !u!1 &715404958
 GameObject:
   m_ObjectHideFlags: 0
