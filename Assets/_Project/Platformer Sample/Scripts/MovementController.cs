@@ -31,6 +31,7 @@ public class MovementController : MonoBehaviour
             else
             {
                 _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                _isGrounded = false;
             }
         }
     }
